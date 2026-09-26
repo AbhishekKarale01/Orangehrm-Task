@@ -1,0 +1,68 @@
+2026-09-26 13:06:53,635 INFO Website opened
+2026-09-26 13:06:53,638 ERROR Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=153.0.8010.53)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff61fe51035+5a95]
+	chromedriver!(No symbol) [0x7ff61fd72c70]
+	chromedriver!(No symbol) [0x7ff61fb94a7d]
+	chromedriver!(No symbol) [0x7ff61fb6bab2]
+	chromedriver!(No symbol) [0x7ff61fc20af6]
+	chromedriver!(No symbol) [0x7ff61fc3f4bd]
+	chromedriver!(No symbol) [0x7ff61fbe1d02]
+	chromedriver!(No symbol) [0x7ff61fbe2b13]
+	chromedriver!GetHandleVerifier [0x7ff620271411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff62029ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff62029094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff61ff4bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff61fd80a05]
+	chromedriver!(No symbol) [0x7ff61fd7bcf4]
+	chromedriver!(No symbol) [0x7ff61fd7be84]
+	chromedriver!(No symbol) [0x7ff61fd666ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff824b97374+14]
+	ntdll!RtlUserThreadStart [0x7ff82589cc91+21]
+Traceback (most recent call last):
+  File "C:\Users\Abhi\Downloads\orangehrm_automation\automation.py", line 53, in automate_orangehrm
+    wait.until(
+  File "C:\Users\Abhi\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhi\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 188, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhi\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 913, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhi\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Abhi\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=153.0.8010.53)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff61fe51035+5a95]
+	chromedriver!(No symbol) [0x7ff61fd72c70]
+	chromedriver!(No symbol) [0x7ff61fb94a7d]
+	chromedriver!(No symbol) [0x7ff61fb6bab2]
+	chromedriver!(No symbol) [0x7ff61fc20af6]
+	chromedriver!(No symbol) [0x7ff61fc3f4bd]
+	chromedriver!(No symbol) [0x7ff61fbe1d02]
+	chromedriver!(No symbol) [0x7ff61fbe2b13]
+	chromedriver!GetHandleVerifier [0x7ff620271411+425e71]
+	chromedriver!GetHandleVerifier [0x7ff62029ca47+4514a7]
+	chromedriver!GetHandleVerifier [0x7ff62029094e+4453ae]
+	chromedriver!GetHandleVerifier [0x7ff61ff4bf6e+1009ce]
+	chromedriver!(No symbol) [0x7ff61fd80a05]
+	chromedriver!(No symbol) [0x7ff61fd7bcf4]
+	chromedriver!(No symbol) [0x7ff61fd7be84]
+	chromedriver!(No symbol) [0x7ff61fd666ac]
+	KERNEL32!BaseThreadInitThunk [0x7ff824b97374+14]
+	ntdll!RtlUserThreadStart [0x7ff82589cc91+21]
+
+2026-09-26 13:08:49,672 INFO Website opened
+2026-09-26 13:08:50,885 INFO Login successful
+2026-09-26 13:08:58,624 INFO PIM opened
+2026-09-26 13:09:04,274 INFO Employee added
+2026-09-26 13:09:15,971 INFO Excel exported
+2026-09-26 13:09:19,858 INFO Logout successful
